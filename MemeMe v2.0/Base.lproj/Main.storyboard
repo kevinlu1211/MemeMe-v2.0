@@ -166,7 +166,7 @@
         <scene sceneID="fbn-YF-xKu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1QP-9Z-qTO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Table" id="dDf-JO-Ktp"/>
+                    <tabBarItem key="tabBarItem" title="Table" image="Table" id="dDf-JO-Ktp"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNF-0X-ikp">
@@ -260,11 +260,11 @@
             </objects>
             <point key="canvasLocation" x="1207.5" y="1224.5"/>
         </scene>
-        <!--Item-->
+        <!--Collection-->
         <scene sceneID="y9q-4R-3OG">
             <objects>
                 <navigationController storyboardIdentifier="collectionNavController" automaticallyAdjustsScrollViewInsets="NO" id="u9p-nl-O5m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VSn-Hd-c94"/>
+                    <tabBarItem key="tabBarItem" title="Collection" image="Collection" id="VSn-Hd-c94"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZtO-uo-mXf">
@@ -312,7 +312,11 @@
             <point key="canvasLocation" x="2160.5" y="310.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Collection" width="30" height="30"/>
+        <image name="Table" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="coN-p5-uVW"/>
+        <segue reference="9rm-Lr-CW2"/>
     </inferredMetricsTieBreakers>
 </document>
