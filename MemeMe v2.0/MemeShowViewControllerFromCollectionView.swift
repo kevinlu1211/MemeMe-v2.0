@@ -20,8 +20,10 @@ class MemeShowViewControllerFromCollectionView: UIViewController {
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        let tapView: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "navBarHide")
         self.tabBarController!.tabBar.hidden = true
         memeImageView.image = memeImage
+        view.addGestureRecognizer(tapView)
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -33,7 +35,13 @@ class MemeShowViewControllerFromCollectionView: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func navBarHide() {
+        if (self.navigationController?.navigationBar.hidden == true) {
+            self.navigationController?.navigationBar.hidden = false
+        } else {
+            self.navigationController?.navigationBar.hidden = true
+        }
+    }
     /*
     // MARK: - Navigation
 

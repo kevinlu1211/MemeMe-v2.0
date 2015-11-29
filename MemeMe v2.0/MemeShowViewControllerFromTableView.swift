@@ -24,7 +24,8 @@ class MemeShowViewControllerFromTableView: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         memeImageView.image = memeImage
-        
+          let tapView: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "navBarHide")
+        view.addGestureRecognizer(tapView)
     }
     
     
@@ -35,6 +36,14 @@ class MemeShowViewControllerFromTableView: UIViewController {
     
     func unwindToTableView() {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func navBarHide() {
+        if (self.navigationController?.navigationBar.hidden == true) {
+            self.navigationController?.navigationBar.hidden = false
+        } else {
+            self.navigationController?.navigationBar.hidden = true
+        }
     }
     
     /*
